@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zacks || Skills ||</title>
+    <link rel="stylesheet" href="about.css"/>
+    <div class="background-image"></div>
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="brand">Zacks</a>
+        <div class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <a href="skills.html">Skills</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </header>
+      <div class="about">
+        <div class="headers">
+           <h1 class="h1"> < html > </h1>
+           <h2 class="h2"> < body > </h2>
+           <h3 class="h3">  < h1 >  </h3>
+        </div>
+        <div class="me">
+        <h4 class="h4">Me,Myself & I</h4>
+        </div>
+        <h5 class="h5"> < /h1 ></h5>
+        <h8 class="h8"> < p > </h8>
+        <p class="p">I'm Front-End Developer located in <span >Tripoli,Lebnanon.</span>I have serious passion for UI effects,animations and creating intuitive,dynamic user experiences.<br>
+        Well-organised person,problem solver,independent employe with high attention to detail.<br>
+        Intersted in the entire frontend spectrum and working on ambitious projects with postive people.
+        </p>
+        <h9 class="h9"> < /p > </h9>
+        <h6 class="h6"> < /body > </h6>
+        <h7 class="h7"> < /html > </h7>
+
+      </div>
+      <div class="box">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
+      
+      <script type="text/javascript">
+         document.querySelector('body').addEventListener('mousemove', eyeball);
+        
+        function eyeball() {
+          const eye = document.querySelectorAll('.eye');
+          eye.forEach(function(eye) {
+            let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+            
+            let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+            
+            let radian = Math.atan2(event.pageX - x, event.pageY - y);
+            let rotation = (radian * (180 / Math.PI) * -1) + 270;
+            eye.style.transform = "rotate("+rotation+"deg)"
+          })
+        }
+      </script>
+    </body>
+</body>
+</html>

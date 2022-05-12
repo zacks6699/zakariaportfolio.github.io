@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+  }
+  body{
+	min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url('./img/wall3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+    
+  }
+  header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    transition: 0.6s;
+    }
+    header.sticky{
+    background: #1483D5;
+    padding: 15px 100px;
+    }
+    header .brand{
+    color: 	#2196f3;
+    font-family:Garamond;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    }
+    
+    header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    header .menu a{
+    color: #2196f3;
+    font-family:Garamond;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+    }
+    
+    header .menu a:hover{
+    color: #f2761e;
+    background:	#000;
+    }
+    
+    header .btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    }
+  .about{
+	  position: absolute;
+    left:30px;
+    top: 40px;
+    padding: 30px 20px;
+    width: 600px;
+  }
+  .about .headers .h1 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .headers .h2 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .headers .h3 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .me .h4 {
+    color: #2196f3;
+	font-family: Lucida Sans Typewriter;
+	font-size: 30px;
+  }
+  .about .h5 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .h6 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .h7 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .h8 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .h9 {
+    color: #f2761e;
+	font-family: Brush Script MT;
+	font-size: 20px;
+  }
+  .about .p {
+	  color: #000;
+	  font-family: Courier New;
+	  font-size: 25px;
+	  font-weight: 550;
+  }
+  .box {
+    display: flex;
+  
+  }
+  
+  .box .eye {
+    position: relative;
+    left: 300px;
+    width: 150px;
+    height: 150px;
+    display: block;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, .2),
+                inset 0 0 15px #f2761e,
+                inset 0 0 25px #f2761e;
+  }
+  
+  .box .eye:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000;
+    border: 10px solid #2196f3;
+    box-sizing: border-box;
+  }
